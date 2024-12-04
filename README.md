@@ -1,11 +1,15 @@
 # human_single_cell_complexity
 
 This repo is to document how single neuron model react to random input distributed on the dendrites. 
+
 All code requred to produce the testing is in ./code__complexity_testing_workflow/
 
 All the statisitc analysis below is made with 
+
 ./complexity_plot_3.py
+
 or 
+
 ./single_lolume_omit_nan.py
 
 for more detail, check the method_section.doc (not yet there)
