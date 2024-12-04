@@ -7,17 +7,17 @@ from statsmodels.stats.multitest import multipletests
 from itertools import combinations
 
 # 1. Data Name Variable
-data_name = "Soma Spike Rate"
+# data_name = "Soma Spike Rate"
 # data_name = "Soma LZ Complexity"
 # data_name = "Max LZ Complexity"
-# data_name = "Whole Cell Complexity per Second"
+data_name = "Whole Cell Complexity per Second"
 
 
 # 2. Read the CSV File
-file_path = 'soma_fire_rate.csv'  # Replace with your file path
+# file_path = 'soma_fire_rate.csv'  # Replace with your file path
 # file_path = 'lzc_soma_hp.csv'  # Replace with your file path
 # file_path = 'lzc_max_hp.csv'  # Replace with your file path
-# file_path = 'global_lzc_hp.csv'  # Replace with your file path
+file_path = 'global_lzc_hp.csv'  # Replace with your file path
 
 data = pd.read_csv(file_path)
 
@@ -42,7 +42,9 @@ color_map = {cell_type: custom_colors[i % len(custom_colors)] for i, cell_type i
 x_values = data.columns[2:].astype(float) / 1000
 
 # Scalling data only for whole cell complexity
-# data.iloc[:, 2:] *= 20
+# 
+if data_name == "Whole Cell Complexity per Second":
+    data.iloc[:, 2:] *= 20
 
 
 # Define the data for each cell type
@@ -67,7 +69,7 @@ for i, cell_type in enumerate(cell_types):
     ax.set_xlim(x_values.min(), x_values.max())
     ax.set_ylim(y_min, y_max)
     ax.tick_params(axis="both", labelsize=8)
-    ax.set_xlabel("Input Frequency (kHz)", fontsize=8)
+    ax.set_xlabel("Input Frequency (Hz)", fontsize=8)
     ax.set_ylabel(data_name, fontsize=8)
     ax.grid(False)
 
