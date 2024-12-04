@@ -3,4 +3,4 @@
 
 
 
-![f]("Soma Spike Rate_subplots_square.png")
+![f](Soma Spike Rate_subplots_square.png)
