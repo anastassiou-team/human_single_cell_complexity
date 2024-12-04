@@ -1,0 +1,163 @@
+{
+    "passive": [
+        {
+            "ra": 177.923079369044
+        }
+    ],
+    "axon_morph": [
+        {
+            "delete_axon": [
+                "forsec axonal{delete_section()}"
+            ],
+            "setup_line": "create soma[1], dend[1], apic[1], axon[1]"
+        }
+    ],
+    "fitting": [
+        {
+            "junction_potential": -14.0,
+            "sweeps": [
+                38
+            ]
+        }
+    ],
+    "conditions": [
+        {
+            "celsius": 34.0,
+            "erev": [
+                {
+                    "ena": 53.0,
+                    "section": "soma",
+                    "ek": -107.0
+                },
+                {
+                    "ena": 53.0,
+                    "section": "dend",
+                    "ek": -107.0
+                }
+            ],
+            "v_init": -68.0
+        }
+    ],
+    "genome": [
+        {
+            "value": 3.1189573053629,
+            "section": "dend",
+            "name": "cm",
+            "mechanism": ""
+        },
+        {
+            "value": 5.95940630615673,
+            "section": "soma",
+            "name": "cm",
+            "mechanism": ""
+        },
+        {
+            "value": 151.709644142233,
+            "section": "soma",
+            "name": "decay_CaDynamics",
+            "mechanism": "CaDynamics"
+        },
+        {
+            "value": -75.8095659165766,
+            "section": "soma",
+            "name": "e_pas",
+            "mechanism": ""
+        },
+        {
+            "value": -75.8095659165766,
+            "section": "dend",
+            "name": "e_pas",
+            "mechanism": ""
+        },
+        {
+            "value": 1.97914983409216e-05,
+            "section": "soma",
+            "name": "g_pas",
+            "mechanism": ""
+        },
+        {
+            "value": 1.97914983409216e-05,
+            "section": "dend",
+            "name": "g_pas",
+            "mechanism": ""
+        },
+        {
+            "value": 0.0049011910011263,
+            "section": "soma",
+            "name": "gamma_CaDynamics",
+            "mechanism": "CaDynamics"
+        },
+        {
+            "value": 0.000556868457115,
+            "section": "soma",
+            "name": "gbar_Ca_HVA",
+            "mechanism": "Ca_HVA"
+        },
+        {
+            "value": 0.0061939456384019,
+            "section": "soma",
+            "name": "gbar_Ca_LVA",
+            "mechanism": "Ca_LVA"
+        },
+        {
+            "value": 9.43442529735163e-05,
+            "section": "dend",
+            "name": "gbar_Ih",
+            "mechanism": "Ih"
+        },
+        {
+            "value": 0.0002938848406614,
+            "section": "soma",
+            "name": "gbar_Ih",
+            "mechanism": "Ih"
+        },
+        {
+            "value": 0.0002166670744493,
+            "section": "dend",
+            "name": "gbar_Im_v2",
+            "mechanism": "Im_v2"
+        },
+        {
+            "value": 0.75995886515958,
+            "section": "soma",
+            "name": "gbar_K_Pst",
+            "mechanism": "K_Pst"
+        },
+        {
+            "value": 0.202963912235775,
+            "section": "soma",
+            "name": "gbar_K_Tst",
+            "mechanism": "K_Tst"
+        },
+        {
+            "value": 0.0126075959738696,
+            "section": "dend",
+            "name": "gbar_Kv3_1",
+            "mechanism": "Kv3_1"
+        },
+        {
+            "value": 1.24306471308525,
+            "section": "soma",
+            "name": "gbar_Kv3_1",
+            "mechanism": "Kv3_1"
+        },
+        {
+            "value": 0.0033996961294975,
+            "section": "dend",
+            "name": "gbar_NaV",
+            "mechanism": "NaV"
+        },
+        {
+            "value": 0.141560138683632,
+            "section": "soma",
+            "name": "gbar_NaV",
+            "mechanism": "NaV"
+        },
+        {
+            "value": 0.0067389267914166,
+            "section": "soma",
+            "name": "gbar_SK",
+            "mechanism": "SK"
+        }
+    ]
+}

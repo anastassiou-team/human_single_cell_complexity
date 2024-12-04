@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#SBATCH --ntasks=24
+#SBATCH --mem=480GB
+
+#SBATCH -J Single_Cell_LZc
+#SBATCH -p costas
+#SBATCH -t 12:00:00
+
+#SBATCH --array=0-460
+##SBATCH --output=/dev/null --error=/dev/null
+
+
+
+source /home/wuy2/2024_0613_bmtk_venv/bin/activate
+python parallel_testing.py  ${SLURM_ARRAY_TASK_ID}
+
