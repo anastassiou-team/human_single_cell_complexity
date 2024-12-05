@@ -4,11 +4,19 @@ This repo is to document how single neuron model react to random input distribut
 
 All code requred to produce the testing is in ./code__complexity_testing_workflow/
 
+for more detail, check the method_section.doc (not yet there)
+
+
+Complexity on the dendretic morphology
+
+code in ./figure__morphology_complexity/
+
+![f](figure__morphology_complexity/summary_plot.png)
+![f](figure__morphology_complexity/scatter_plot_batch_1.png)
+
 All the statisitc analysis below is made with 
 
 ./figure__statistics/complexity_plot_3.py  or   ./figure__statistics/single_lolume_omit_nan.py
-
-for more detail, check the method_section.doc (not yet there)
 
 ![f](figure__statistics/Soma%20Spike%20Rate_subplots_square.png)
 ![f](figure__statistics/Soma%20Spike%20Rate_violin_plot_pval_stars_text.png)
