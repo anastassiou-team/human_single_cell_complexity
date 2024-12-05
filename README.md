@@ -6,11 +6,7 @@ All code requred to produce the testing is in ./code__complexity_testing_workflo
 
 All the statisitc analysis below is made with 
 
-./complexity_plot_3.py
-
-or 
-
-./single_lolume_omit_nan.py
+./figure__statistics/complexity_plot_3.py  or   ./figure__statistics/single_lolume_omit_nan.py
 
 for more detail, check the method_section.doc (not yet there)
 
