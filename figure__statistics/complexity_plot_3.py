@@ -44,7 +44,7 @@ x_values = data.columns[2:].astype(float) / 1000
 # Scalling data only for whole cell complexity
 # 
 if data_name == "Whole Cell Complexity per Second":
-    data.iloc[:, 2:] *= 20
+    data.iloc[:, 2:] *= 5000
 
 
 # Define the data for each cell type
